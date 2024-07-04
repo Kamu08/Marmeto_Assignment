@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<title>Product Page</title>
+</head>
+<body>
+	<div class="container">
+		<div class="product-image">
+			<img id="main-image" src="" alt="Product Image">
+			<div class="thumbnails" id="thumbnails"></div>
+		</div>
+		<div class="product-details">
+			<h2 id="vendor"></h2>
+			<h1 id="title"></h1>
+			<p class="border-b"></p>
+			<p id="price"></p>
+			<p class="border-b"></p>
+			<div class="selectors">
+				<div class="selector-c">
+					<label class="selector-label-c">Choose a Color</label>
+					<div id="color-options" class="options-c"></div>
+				</div>
+				<p class="border-b"></p>
+				<div class="selector">
+					<label class="selector-label">Choose a Size</label>
+					<div id="size-options" class="options"></div>
+				</div>
+			</div>
+			<div class="quantity-and-cart">
+				<div class="quantity-selector">
+					<button class="quantity-button" onclick="changeQuantity(-1)">-</button>
+					<input type="number" id="quantity" value="1" min="1">
+					<button class="quantity-button" onclick="changeQuantity(1)">+</button>
+				</div>
+				<div class="cart">
+					<img class="img" src="cart1.png" alt="bag">
+					<button id="add-to-cart" onclick="addToCart()">Add To Cart</button>
+				</div>
+			</div>
+			<div id="cart-message"></div>
+			<p class="border-b"></p>
+			<p id="description"></p>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
